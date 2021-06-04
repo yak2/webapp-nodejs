@@ -14,32 +14,24 @@ Web Application with docker microservices
 => Build Docker Image
 => Execute
 
----------------
-## Docker vs VM
----------------
-
+# Docker vs VM
 # [Benefits of Virtual Machines]
 1) All OS resources available to apps
 2) Established management tools
 3) Established security tools
 4) Better known security controls
 5) Vmware, Hyper-V, KVM, Virtualbox, Xen
-	04:39:54
 
 # [Docker Containers]
 
 App      | App2
 Bins/Libs| Bins/Libs
-----------------------
-  Container Manager
-----------------------
-   Host OS
-----------------------
-  Infrastructure
-----------------------
+Container Manager
+Host OS
+Infrastructure
 
 [ Types of Containers? ]
-==> Linux Containers(LXC)
+=> Linux Containers(LXC)
 * Commonlly known as LXC
 * It is linux operating system level virtualization method for running multiple isolated linux systems on a single host.
 
@@ -55,8 +47,7 @@ Bins/Libs| Bins/Libs
 * Less Code
 * Reduced size of snapshots
 * Reduced IT Management Resources
-* Popular Container Provider i.e. Linux Containers, Docker, Windows Server 
-04:42:51
+* Popular Container Provider i.e. Linux Containers, Docker, Windows Server
 
 => Major Differences
 1) OS-Support
@@ -73,20 +64,20 @@ Virtual machines:
 	- Own kernel and security features
 
 3) Portability
+
 Docker:
 	- Containers are self-contained packages that can run the required application.
 	- Light-weight architecture
 	- For development puposes Docker containers are the ideal choice
-VM:
-	- Are isolated server instances with their own OS
+
+VM:	- Are isolated server instances with their own OS
 
 4) Performance
-Docker:
-	- Light-Weight architecure and start up very fast compared o VM,
+Docker: - Light-Weight architecure and start up very fast compared o VM,
 	- Resource usage also varies among the two
 	- CPU, memory, I/O etc usage varies with the load
-VMs:
-	- No need to allocate resources permanently to containers
+
+VMs:	- No need to allocate resources permanently to containers
 	- Has to load an entire OS to start
 
 # [Kubernetes vs. Docker Swarm]
@@ -140,10 +131,8 @@ Docker Swarm :
 	- No automatic Rollbacks
 
 7) Data Volumes
-Kubernetes : 
-	- Storage Volumes shared only between containers within the same Pod
-Docker Swarm :
-	- Storage Volumes can be shared with any other container in the node
+Kubernetes : Storage Volumes shared only between containers within the same Pod
+Docker Swarm :	Storage Volumes can be shared with any other container in the node
 
 8) Logging & Monitoring
 Kubernetes : In-built loggin and monitoring tools in place
